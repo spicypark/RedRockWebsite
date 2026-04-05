@@ -6,7 +6,7 @@
   <title>Red Rock Robotics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="icon" type="image/png" href="images/logos/logo.png">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" onclick="showPage('home')">
-    <img src="images/logowithtext.png" alt="Red Rock Robotics Logo" />
+    <img src="images/logos/logowithtext.png" alt="Red Rock Robotics Logo" />
     <!-- <span>Red Rock Robotics</span> -->
   </a>
   <div class="nav-right">
@@ -29,7 +29,16 @@
       </div>
     </div>
     <a onclick="showPage('robots')" id="nav-robots">Robots</a>
-    <a onclick="showPage('media')" id="nav-media">Media</a>
+    <div class="dropdown">
+      <span class="dropdown-trigger" id="nav-media">Media ▾</span>
+      <div class="dropdown-menu">
+        <a onclick="showPage('media-2026')">2026</a>
+        <a onclick="showPage('media-2025')">2025</a>
+        <a onclick="showPage('media-2024')">2024</a>
+        <a onclick="showPage('media-2023')">2023</a>
+        <a onclick="showPage('media-2022')">2022</a>
+      </div>
+    </div>
     <a onclick="showPage('sponsors')" id="nav-sponsors">Sponsors</a>
   </div>
 </nav>
@@ -37,11 +46,10 @@
 <!-- ===== HOME ===== -->
 <div id="home" class="page active">
   <section class="hero">
-    <img class="hero-img" src="images/team_photo.jpeg" alt="Red Rock Robotics Team" />
+    <img class="hero-img" src="images/homepage/2026idaho.jpeg" alt="Red Rock Robotics Team" />
     <div class="hero-overlay">
       <p class="hero-eyebrow">Founded 2009 • Salt Lake City, Utah</p>
       <h1 class="hero-title">RED ROCK<br /><span>ROBOTICS</span></h1>
-      <!-- <p class="hero-sub ">50+ active students &nbsp;·&nbsp; 10+ mentors &nbsp;·&nbsp; Competing at the highest level</p> -->
       <p class="hero-teams">Teams <span>3006</span> &amp; <span>2726</span></p>
       <div class="hero-cta">
         <a class="btn btn-primary" onclick="showPage('about-org')">Learn More</a>
@@ -56,7 +64,7 @@
       <span class="stat-label">Active Students</span>
     </div>
     <div class="stat-item">
-      <span class="stat-number">10+</span>
+      <span class="stat-number">7</span>
       <span class="stat-label">Mentors &amp; Coaches</span>
     </div>
     <div class="stat-item">
@@ -147,52 +155,52 @@
   <div class="people-grid">
     <div class="person-card">
       <div class="person-abbrev">HW</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Hardware Captain</div><div class="person-name">Khangai Sukhbaatar</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">HW</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Hardware Captain</div><div class="person-name">Xander Betts</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">SW</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Software Captain</div><div class="person-name">Jerry Zheng</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">SW</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Software Captain</div><div class="person-name">Jason Guo</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">STR</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Strategy Captain</div><div class="person-name">Emmett Majersik</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">STR</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Strategy Captain</div><div class="person-name">Vanessa Tran</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">HPR</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">HPR Captain</div><div class="person-name">Ella Frandsen</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">HPR</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">HPR Captain</div><div class="person-name">Colin Wallace</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">SAF</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Safety Captain</div><div class="person-name">Giorgio Chon-Stone</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">ELEC</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Electrical Captain</div><div class="person-name">Alexis Bangerter</div></div>
     </div>
   </div>
@@ -208,37 +216,37 @@
   <div class="people-grid">
     <div class="person-card">
       <div class="person-abbrev">HC</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Head Coach</div><div class="person-name">Alison Bulson</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">C</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Coach</div><div class="person-name">Enrique Arce-Larreta</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">C</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Coach</div><div class="person-name">Trevor Smith</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">M</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Mentor - Hardware</div><div class="person-name">Cameron Wold</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">M</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Mentor - Software</div><div class="person-name"> Jason Don</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">M</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Mentor - Software</div><div class="person-name"> Loren Majersik</div></div>
     </div>
     <div class="person-card">
       <div class="person-abbrev">AM</div>
-      <div class="person-avatar"><img src="images/logo.png" alt="" /></div>
+      <div class="person-avatar"><img src="images/logos/logo.png" alt="" /></div>
       <div class="person-info"><div class="person-role">Alumni-Mentor - Software</div><div class="person-name"> Russell Brinton</div></div>
     </div>
   </div>  
@@ -304,7 +312,7 @@
 
     <div class="robot-row" onclick="showPage('robot-2022')">
       <div class="robot-year-badge">2022</div>
-      <div class="robot-img-area"><img src="images/logo.png" alt="" /></div>
+      <div class="robot-img-area"><img src="images/logos/logo.png" alt="" /></div>
       <div class="robot-info">
         <div class="robot-game-tag">RAPID REACT℠ presented by The Boeing Company</div>
         <div class="robot-name">Walter</div>
@@ -425,7 +433,7 @@
     <span class="section-label">2022 · RAPID REACT℠ presented by The Boeing Company · Team 3006</span>
     <h2 style="font-family:'Bebas Neue',sans-serif;font-size:3rem;letter-spacing:0.06em;">Walter</h2>
   </div>
-  <div class="robot-detail-img"><img src="images/logo.png" alt="Walter robot photo coming soon" /></div>
+  <div class="robot-detail-img"><img src="images/logos/logo.png" alt="Walter robot photo coming soon" /></div>
   <div class="robot-detail-body">
     <p>Coming soon.</p>
     <h3 class="robot-awards-title">Awards Won</h3>
@@ -435,71 +443,108 @@
   </div>
 </div>
 
-<!-- ===== MEDIA ===== -->
-<div id="media" class="page">
+<!-- ===== MEDIA: 2026 ===== -->
+<div id="media-2026" class="page">
   <div class="page-hero">
     <span class="section-label">Gallery</span>
-    <h1>Media</h1>
+    <h1>Media · 2026</h1>
     <p>Behind the build, on the field, and everything in between.</p>
   </div>
   <div class="media-years">
-
     <div class="media-year-section">
-      <div class="media-year-label">2026</div>
       <div class="media-grid">
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- ===== MEDIA: 2025 ===== -->
+<div id="media-2025" class="page">
+  <div class="page-hero">
+    <span class="section-label">Gallery</span>
+    <h1>Media · 2025</h1>
+    <p>Behind the build, on the field, and everything in between.</p>
+  </div>
+  <div class="media-years">
     <div class="media-year-section">
-      <div class="media-year-label">2025</div>
       <div class="media-grid">
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- ===== MEDIA: 2024 ===== -->
+<div id="media-2024" class="page">
+  <div class="page-hero">
+    <span class="section-label">Gallery</span>
+    <h1>Media · 2024</h1>
+    <p>Behind the build, on the field, and everything in between.</p> 
+  </div>
+  <div class="media-years">
     <div class="media-year-section">
-      <div class="media-year-label">2024</div>
       <div class="media-grid">
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- ===== MEDIA: 2023 ===== -->
+<div id="media-2023" class="page">
+  <div class="page-hero">
+    <span class="section-label">Gallery</span>
+    <h1>Media · 2023</h1>
+    <p>Behind the build, on the field, and everything in between.</p>
+  </div>
+  <div class="media-years">
     <div class="media-year-section">
-      <div class="media-year-label">2023</div>
       <div class="media-grid">
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- ===== MEDIA: 2022 ===== -->
+<div id="media-2022" class="page">
+  <div class="page-hero">
+    <span class="section-label">Gallery</span>
+    <h1>Media · 2022</h1>
+    <p>Behind the build, on the field, and everything in between.</p>
+  </div>
+  <div class="media-years">
     <div class="media-year-section">
-      <div class="media-year-label">2022</div>
       <div class="media-grid">
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
-        <div class="media-item"><img src="images/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
+        <div class="media-item"><img src="images/logos/logo.png" alt="" /></div>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -521,35 +566,26 @@
     </div>
 
     <div class="sponsors-tier">
-      <div class="tier-label">Gold Sponsors</div>
+      <div class="tier-label">Sponsors</div>
       <div class="sponsors-row">
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-      </div>
-    </div>
-
-    <div class="sponsors-tier">
-      <div class="tier-label">Supporting Sponsors</div>
-      <div class="sponsors-row">
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
-        <div class="sponsor-logo medium"><img src="images/logo.png" alt="Sponsor" /></div>
+        <img class="sponsor-logo-plain" src="images/sponsors/northropgrumman.png" alt="Northrop Grumman" />
+        <img class="sponsor-logo-plain" src="images/sponsors/riotinto.png" alt="Rio Tinto" />
+        <img class="sponsor-logo-plain" src="images/sponsors/haas.png" alt="Haas" />
+        <img class="sponsor-logo-plain" src="images/sponsors/slef.png" alt="SLEF" />
+        <img class="sponsor-logo-plain" src="images/sponsors/stemactioncenter.png" alt="Utah STEM Action Center" />
+        <img class="sponsor-logo-plain" src="images/sponsors/dod.jpg" alt="Department of Defense" />
+        <img class="sponsor-logo-plain" src="images/sponsors/tslots.png" alt="TSLOTS" />
       </div>
     </div>
 
     <div class="sponsor-form-section">
       <h2>Become a Sponsor</h2>
-      <p>Interested in supporting the next generation of engineers? Fill out the form below and our HPR team will be in touch.</p>
+      <p>Interested in supporting the next generation of engineers? Fill out the form below and our team will be in touch.</p>
       <div id="sponsor-form-wrap">
         <div class="form-row">
           <div class="form-group">
             <label>Company / Organization Name</label>
-            <input type="text" placeholder="e.g. Acme Engineering" id="s-company" />
+            <input type="text" placeholder="Red Rock Robotics" id="s-company" />
           </div>
           <div class="form-group">
             <label>Contact Name</label>
@@ -563,29 +599,18 @@
           </div>
           <div class="form-group">
             <label>Phone (optional)</label>
-            <input type="tel" placeholder="(801) 555-0100" />
+            <input type="tel" placeholder="(801) 555-3006" id="s-phone" />
           </div>
         </div>
         <div class="form-group">
-          <label>Sponsorship Interest Level</label>
-          <select>
-            <option value="">Select a tier...</option>
-            <option>Presenting Sponsor</option>
-            <option>Gold Sponsor</option>
-            <option>Supporting Sponsor</option>
-            <option>In-Kind Donation</option>
-            <option>Other / Not Sure Yet</option>
-          </select>
-        </div>
-        <div class="form-group">
           <label>Message</label>
-          <textarea placeholder="Tell us a little about your organization and how you'd like to support Red Rock Robotics..."></textarea>
+          <textarea id="s-message" placeholder="Tell us a little about your organization and how you'd like to support Red Rock Robotics..."></textarea>
         </div>
         <button class="btn btn-primary" onclick="submitSponsorForm()" style="margin-top:0.5rem;">Submit Inquiry</button>
       </div>
       <div class="form-submitted" id="form-submitted">
         <p style="font-size:1.1rem;color:var(--white);margin-bottom:0.5rem;">✓ Thank you for reaching out!</p>
-        <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;margin:0;">Our HPR team will be in touch within a few business days.</p>
+        <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;margin:0;">Our team will be in touch within a few business days.</p>
       </div>
     </div>
   </div>
@@ -595,6 +620,17 @@
 <footer class="site-footer">
   <div class="footer-brand">
     <span>RED ROCK</span> ROBOTICS &nbsp;·&nbsp;<span>3006</span> &nbsp;·&nbsp; <span>2726</span>
+  </div>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/redrockrobotics/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <img src="images/socials/instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://www.youtube.com/@redrockrobotics" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+      <img src="images/socials/youtube.png" alt="YouTube" />
+    </a>
+    <a href="https://github.com/Red-Rock-Robotics-3006" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <img src="images/socials/github.png" alt="GitHub" />
+    </a>
   </div>
   <div class="footer-meta">Salt Lake City, Utah &nbsp;·&nbsp; FIRST Robotics Competition</div>
 </footer>

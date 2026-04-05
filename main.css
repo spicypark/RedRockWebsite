@@ -132,6 +132,7 @@ nav {
   opacity: 0.45;
   display: block;
   filter: saturate(0.7);
+  transition: opacity 1s ease-in-out;
 }
 
 .hero-overlay {
@@ -842,7 +843,15 @@ nav {
 }
 
 .presenting-logo {
-  width: 300px;
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.sponsor-logo-plain {
+  width: 240px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -949,6 +958,28 @@ nav {
 }
 
 .footer-brand span { color: var(--red); }
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.footer-links a img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+}
+
 .footer-meta { font-size: 0.78rem; color: rgba(255,255,255,0.3); letter-spacing: 0.05em; }
 
 /* ANIMATIONS */
