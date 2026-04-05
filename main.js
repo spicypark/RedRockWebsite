@@ -129,6 +129,11 @@ function startHomepageBackgroundRotation() {
     'images/homepage/2024colorado.JPG'
   ];
 
+  rotationImages.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+
   let currentIndex = 0;
   heroImage.src = rotationImages[currentIndex];
   heroImage.style.opacity = '0.45';
@@ -137,8 +142,8 @@ function startHomepageBackgroundRotation() {
     heroImage.style.opacity = '0';
 
     setTimeout(() => {
-    currentIndex = (currentIndex + 1) % rotationImages.length;
-    heroImage.src = rotationImages[currentIndex];
+      currentIndex = (currentIndex + 1) % rotationImages.length;
+      heroImage.src = rotationImages[currentIndex];
       heroImage.style.opacity = '0.45';
     }, 1000);
   }, 8000);
