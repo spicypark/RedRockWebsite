@@ -766,8 +766,18 @@ body.nav-open {
 .robot-row:hover .robot-arrow { color: var(--red); transform: translateX(4px); }
 
 /* Robot detail */
+.robot-detail-back {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.45rem 2rem 0.35rem;
+}
+
+.robot-detail-back .back-btn {
+  margin-bottom: 0.4rem;
+}
+
 .robot-detail-header {
-  padding: 4rem 2rem 3rem;
+  padding: 1rem 2rem 2.35rem;
   max-width: 900px;
   margin: 0 auto;
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -1084,7 +1094,7 @@ body.nav-open {
     top: 0;
     left: 0;
     bottom: 0;
-    width: min(94vw, 420px);
+    width: min(80vw, 420px);
     height: 100dvh;
     background: rgba(26,26,26,0.99);
     border-right: 1px solid rgba(218,55,55,0.25);
@@ -1158,7 +1168,8 @@ body.nav-open {
 
 @media (max-width: 480px) {
   .nav-right {
-    width: 100vw;
+    width: 80vw;
+    max-width: 370px;
     padding: 5.4rem 1rem 1.35rem;
   }
 
@@ -1175,6 +1186,14 @@ body.nav-open {
 }
 
 @media (max-width: 768px) {
+  .robot-detail-back {
+    padding: 1.1rem 1rem 0.2rem;
+  }
+
+  .robot-detail-header {
+    padding: 0.7rem 1rem 1.6rem;
+  }
+
   .nav-logo span { display: none; }
   .hero-title { font-size: 3.5rem; }
   .home-stats { flex-wrap: wrap; }
