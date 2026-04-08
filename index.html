@@ -17,10 +17,17 @@
     <img src="images/logos/logowithtext.png" alt="Red Rock Robotics Logo" />
     <!-- <span>Red Rock Robotics</span> -->
   </a>
-  <div class="nav-right">
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="nav-right" id="nav-menu">
     <a onclick="showPage('home')" id="nav-home" class="active">Home</a>
     <div class="dropdown">
-      <span class="dropdown-trigger" id="nav-about">About ▾</span>
+      <button type="button" class="dropdown-trigger" id="nav-about">
+        About <span class="dropdown-caret">▾</span>
+      </button>
       <div class="dropdown-menu">
         <a onclick="showPage('about-org')">Organization</a>
         <a onclick="showPage('about-first')">FIRST</a>
@@ -30,7 +37,9 @@
     </div>
     <a onclick="showPage('robots')" id="nav-robots">Robots</a>
     <div class="dropdown">
-      <span class="dropdown-trigger" id="nav-media">Media ▾</span>
+      <button type="button" class="dropdown-trigger" id="nav-media">
+        Media <span class="dropdown-caret">▾</span>
+      </button>
       <div class="dropdown-menu">
         <a onclick="showPage('media-2026')">2026</a>
         <a onclick="showPage('media-2025')">2025</a>
@@ -42,6 +51,7 @@
     <a onclick="showPage('sponsors')" id="nav-sponsors">Sponsors</a>
   </div>
 </nav>
+<div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
 
 <!-- ===== HOME ===== -->
 <div id="home" class="page active">
