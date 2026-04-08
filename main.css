@@ -103,24 +103,24 @@ nav {
   border: none;
   background: none;
   cursor: pointer;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   border-radius: 6px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 }
 
 .nav-toggle span {
-  width: 20px;
-  height: 2px;
+  width: 24px;
+  height: 2.5px;
   background: var(--white);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .nav-toggle.active span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(8.5px) rotate(45deg);
 }
 
 .nav-toggle.active span:nth-child(2) {
@@ -128,7 +128,7 @@ nav {
 }
 
 .nav-toggle.active span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-8.5px) rotate(-45deg);
 }
 
 .dropdown { position: relative; }
@@ -1084,15 +1084,16 @@ body.nav-open {
     top: 0;
     left: 0;
     bottom: 0;
-    width: min(84vw, 320px);
+    width: min(94vw, 420px);
+    height: 100dvh;
     background: rgba(26,26,26,0.99);
     border-right: 1px solid rgba(218,55,55,0.25);
     box-shadow: 14px 0 30px rgba(0,0,0,0.45);
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.4rem;
-    padding: 5.2rem 0.95rem 1.2rem;
+    gap: 0.55rem;
+    padding: 5.6rem 1.1rem 1.5rem;
     transform: translateX(-105%);
     transition: transform 0.28s ease;
     overflow-y: auto;
@@ -1109,9 +1110,10 @@ body.nav-open {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0.85rem 0.95rem;
-    font-size: 0.78rem;
-    letter-spacing: 0.11em;
+    padding: 1rem 1.05rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     border-radius: 6px;
     text-align: left;
   }
@@ -1136,21 +1138,39 @@ body.nav-open {
   }
 
   .dropdown.open .dropdown-menu {
-    max-height: 320px;
+    max-height: 520px;
     opacity: 1;
-    margin-top: 0.25rem;
+    margin-top: 0.35rem;
   }
 
   .dropdown-menu a {
     border-bottom: none;
-    padding: 0.7rem 0.95rem;
-    font-size: 0.72rem;
-    letter-spacing: 0.11em;
+    padding: 0.85rem 1rem;
+    font-size: 0.86rem;
+    letter-spacing: 0.08em;
     border-radius: 6px;
   }
 
   .dropdown.open .dropdown-caret {
     transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-right {
+    width: 100vw;
+    padding: 5.4rem 1rem 1.35rem;
+  }
+
+  .nav-right a,
+  .nav-right .dropdown-trigger {
+    font-size: 0.92rem;
+    padding: 0.95rem 0.95rem;
+  }
+
+  .dropdown-menu a {
+    font-size: 0.82rem;
+    padding: 0.8rem 0.9rem;
   }
 }
 
