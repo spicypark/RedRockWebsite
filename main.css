@@ -899,7 +899,7 @@ body.nav-open {
 
 .tier-label::after { content: ''; flex: 1; height: 1px; background: rgba(218,55,55,0.2); }
 
-.sponsors-row { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+.sponsors-row { display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
 
 .sponsor-logo {
   background: var(--dark2);
