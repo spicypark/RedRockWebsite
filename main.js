@@ -203,6 +203,7 @@ function startHomepageBackgroundRotation() {
   if (!heroImage) return;
 
   const rotationImages = [
+    'images/homepage/2026utah.jpg',
     'images/homepage/2026idaho.jpeg',
     'images/homepage/2025worlds.JPG',
     'images/homepage/gustavidaho.JPG',
